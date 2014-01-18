@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010 Florian Sundermann
+ * Copyright (C) 2014 David-Lee Kulsch
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,7 +63,7 @@ public class AboutScreen extends CCLayer  {
 	public AboutScreen(CCScene next) {
 		mNext = next;
 		CGSize s = CCDirector.sharedDirector().winSize();
-		String[] text = MyResources.stringArray(R.array.helpscreen);
+		String[] text = MyResources.stringArray(R.array.aboutscreen);
 		int pos=text.length * (int)Label.SMALLER;
 		for (String str : text) {		
 			Label lbl = new Label(str, Label.SMALLER);		

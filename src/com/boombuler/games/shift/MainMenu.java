@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2010 Florian Sundermann
- *
+ * Copyright (C) 2014 David-Lee Kulsch
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -60,11 +61,11 @@ public class MainMenu extends CCLayer implements KeyHandler {
 		CCMenuItem hard = getTextItem(R.string.hard, "startHard");
 		CCMenuItem quit = getTextItem(R.string.quit, "onQuit");
 		CCMenuItem help = getTextItem(R.string.show_help, "showHelp");
-		CCMenuItem help = getTextItem(R.string.about, "showAbout");
+		CCMenuItem about = getTextItem(R.string.about, "showAbout");
 		CCMenuItem highscore = getTextItem(R.string.highscore, "showHighscore");
 		
-        CCMenu result = CCMenu.menu(easy, normal, hard, highscore, help, quit);
-		result.alignItemsVertically(0f);
+        CCMenu result = CCMenu.menu(easy, normal, hard, highscore, help, about, quit);
+		result.alignItemsVertically(2f);
 		CGSize winSize = CCDirector.sharedDirector().winSize();
 		
 		result.setPosition(winSize.width / 2f, winSize.height / 4.5f);

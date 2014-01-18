@@ -45,7 +45,7 @@ public class Highscores extends CCLayer implements KeyHandler{
 	}
 	
 	private Highscores() {
-		setIsTouchEnabled(true);
+		setIsTouchEnabled(false);
 		setScale(Main.SCALE*Block.SCALE);
 		CGSize s = CCDirector.sharedDirector().winSize();
 		float colWidth = (s.width / 4);
